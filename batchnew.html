@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student_pofile - Roll No: 58</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    padding:20px;
+}
+
+
+nav{
+    display:flex;
+    flex-direction:column;
+    gap: 50px;
+    margin-bottom:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:blue;
+    font-weight:bold;
+}
+
+/* Desktop Navbar */
+@media(min-width:1024px){
+    nav{
+        flex-direction:row;
+        gap: 50px;
+    }
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+img{
+    width: 500px;
+    max-width:100%;
+    border-radius:50px;
+    margin-bottom:20px;
+}
+
+.video-container{
+    background-color:purple;
+    padding:10px;
+    width:fit-content;
+    margin-bottom:60px;
+}
+
+video{
+    width:50vw;
+}
+table{
+    border-collapse:collapse;
+    width:100%;
+    margin-bottom:20px;
+}
+
+th,td{
+    border:1px solid black;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background-color:bisque;
+}
+
+/* Button */
+button{
+    background-color:purple;
+    color:lightblue;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+    margin:20px 0;
+}
+
+button:hover{
+    opacity:0.8;
+}
+
+/* Grid - Desktop First */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin-top:20px;
+}
+
+.box{
+    background-color:lightcoral;
+    padding:20px;
+    text-align:center;
+}
+
+/* Mobile */
+@media(max-width:600px){
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<h1>My profile</h1>
+
+<img src="flowernew.jpg" alt="Sample Image">
+
+<div class="video-container">
+    <video controls>
+        <source src="castlevideo.mp4" type="video/mp4">
+    </video>
+</div>
+
+<table>
+ <tr>
+    <th>Roll No</th>
+    <th>Name</th>
+    <th>Department</th>
+</tr>
+
+<tr>
+    <td>09</td>
+    <td>Davanithi</td>
+    <td>ECE</td>
+</tr>
+
+
+    <tr>
+        <td>46</td>
+        <td>Nikitha</td>
+        <td>ECE</td>
+    </tr>
+
+    <tr>
+        <td>58</td>
+        <td>Preethika</td>
+        <td>ECE</td>
+    </tr>
+
+    <tr>
+        <td>76</td>
+        <td>Shahin</td>
+        <td>ECE</td>
+    </tr>
+</table>
+
+<button onClick="alert('Clicked')">Click Me</button>
+
+<div class="grid">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+</div>
+
+</body>
+</html>
